@@ -87,12 +87,7 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light">
                     <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4" style="border-bottom: solid 1px #fff; padding-bottom: 15px">
-                        <i class="fas me-3"></i>Sign
-                    </h6>
-                    <p style="text-align: left">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi iusto quis recusandae. A animi asperiores, at cum deleniti deserunt dignissimos et eum fuga ipsam laboriosam laborum nihil quaerat sequi!
-                    </p>
+
                 </div>
                 <!-- Grid column -->
 
@@ -119,22 +114,7 @@
 
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4"  style="border-bottom: solid 1px #fff; padding-bottom: 15px">
-                        Links
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-reset">Pricing</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Settings</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Orders</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Help</a>
-                    </p>
+
                 </div>
                 <!-- Grid column -->
 
@@ -144,13 +124,17 @@
                     <h6 class="text-uppercase fw-bold mb-4" style="border-bottom: solid 1px #fff; padding-bottom: 15px">
                         Contact
                     </h6>
-                    <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+
+                    <p><i class="fas fa-home me-3"></i> Curio, opleiding sign
+                        Nobellaan 27
+                        4622 AH Bergen op Zoom
+
+                       </p>
                     <p>
                         <i class="fas fa-envelope me-3"></i>
-                        info@example.com
+                        sign@curio.nl
                     </p>
-                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    <p><i class="fas fa-phone me-3"></i> 088-2098600</p>
                 </div>
                 <!-- Grid column -->
             </div>
@@ -162,7 +146,7 @@
     <!-- Copyright -->
     <div class="text-center p-4 text-light" style="background-color: #072e62;">
         © 2022 Copyright:
-        <a class="text-reset fw-bold" href="{{route('home')}}">Sign-opdracht.com</a>
+        <a class="text-reset fw-bold" href="{{route('home')}}">signklust.curioweb.nl</a>
     </div>
     <!-- Copyright -->
 </footer>

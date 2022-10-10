@@ -12,7 +12,7 @@
                 <img class="d-block w-100 overlay-image" src="{{asset('img/placeholder-home.avif')}}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welkom op de Sign page!</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda blanditiis corporis doloremque, ea nobis porro repellat reprehenderit. Beatae consectetur nam nisi porro? Accusamus aliquid itaque laborum nobis nulla pariatur?</p>
+{{--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda blanditiis corporis doloremque, ea nobis porro repellat reprehenderit. Beatae consectetur nam nisi porro? Accusamus aliquid itaque laborum nobis nulla pariatur?</p>--}}
                 </div>
             </div>
             <div class="carousel-item">
