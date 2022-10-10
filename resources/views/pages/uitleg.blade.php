@@ -44,13 +44,16 @@
                     </div>
                     <div class="w-100"></div>
                     <div class="col text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem eum molestiae officiis omnis qui quos. Accusamus dolore ea eaque ex excepturi nam reiciendis voluptates voluptatum. Iure sequi ut vel.</p>
+                        <h3>Start de Sign Opdracht</h3>
+                        <p>Beschrijf in enkele minuten wat u nodig heeft en onze studenten gaan er mee aan de slag</p>
                     </div>
                     <div class="col text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur deleniti deserunt dignissimos distinctio, doloremque enim eos fugit iure labore libero minima nesciunt nobis optio, quos rem repudiandae tempora vero!</p>
+                        <h3>Ontvang vele ontwerpen/signuitingen</h3>
+                        <p>De studenten gaan aan de slag. U zult een aantal ontwerpen/bestanden op maat ontvangen. Geef feedback en werk samen aan uw signuiting.</p>
                     </div>
                     <div class="col text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores at consequatur cum delectus doloribus eos facilis fugit libero minus, molestiae nemo quis, reiciendis rerum, tempore totam velit voluptatum.</p>
+                        <h3>Kies uw nieuwe ontwerp/signuiting</h3>
+                        <p>Kies een student en maak een afspraak t.b.v. uitwisseling bestanden/montage etc.</p>
                     </div>
                 </div>
                 <div class="explanation-info">
