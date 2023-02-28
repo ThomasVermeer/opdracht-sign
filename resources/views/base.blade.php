@@ -106,9 +106,7 @@
                     <p>
                         <a href="{{route('uitleg')}}" class="text-reset">Uitleg</a>
                     </p>
-                    <p>
-                        <a href="#!" class="text-reset">Laravel</a>
-                    </p>
+                  
                 </div>
                 <!-- Grid column -->
 
