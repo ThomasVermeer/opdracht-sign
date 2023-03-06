@@ -123,11 +123,13 @@
                         Contact
                     </h6>
 
-                    <p><i class="fas fa-home me-3"></i> Curio, opleiding sign
+                    <p style=" max-width: 220px; padding-left:50px;" ><i class="fas fa-home me-3"></i> 
+                        Curio, opleiding sign
                         Nobellaan 27
                         4622 AH Bergen op Zoom
 
                        </p>
+                     
                     <p>
                         <i class="fas fa-envelope me-3"></i>
                         sign@curio.nl
