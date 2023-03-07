@@ -45,17 +45,30 @@ class RegisteredUserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        if($request->action == 'opdrachtgever'){
+        if ($request->action == 'opdrachtgever') {
             $user->assignRole('opdrachtgever');
-        }
-        else{
+            //test
+            event(new Registered($user));
+            Auth::login($user);
+            return redirect(RouteServiceProvider::HOME);
+            //test
+        } else {
             $user->assignRole('user');
+            event(new Registered($user));
+            Auth::login($user);
+            return redirect('/opdrachten');
+            //test
         }
 
-        event(new Registered($user));
 
-        Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+
+        // if ($user->role == 'user') {
+        //     
+        // } else {
+        //bezig
+        //    
+
+        //bezig met als een leerling (user inlogt stuur naar opdrachten overzichg)
     }
 }

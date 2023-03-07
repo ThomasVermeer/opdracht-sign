@@ -3,8 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use Illuminate\Database\Seeder;
 
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class AdminSeeder extends Seeder
 {
@@ -19,7 +20,7 @@ class AdminSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@sign.curio.nl',
             'email_verified_at' => now(),
-            'password' => \Hash::make('Welkom123!'), // password
+            'password' => Hash::make('Welkom123!'), // password
         ]);
         $user->assignRole('admin');
     }
