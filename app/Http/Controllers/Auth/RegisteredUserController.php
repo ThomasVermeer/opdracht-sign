@@ -63,11 +63,9 @@ class RegisteredUserController extends Controller
 
 
 
-        // if ($user->role == 'user') {
-        //     
-        // } else {
-        //bezig
-        //    
+
+
+
 
         //bezig met als een leerling (user inlogt stuur naar opdrachten overzichg)
     }
