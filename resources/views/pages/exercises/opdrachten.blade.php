@@ -50,6 +50,7 @@
                     @endif
                 @empty
                     <p>Er zijn geen opdrachten in deze categorie.</p>
+                    
                     <style>thead{display: none;}</style>
                 @endforelse
                 </tbody>

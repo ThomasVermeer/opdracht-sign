@@ -34,14 +34,20 @@ class AuthenticatedSessionController extends Controller
 
         //beziggggg
 
-        if (Auth::user()->role == 'opdrachtgever') {
-            return redirect(RouteServiceProvider::HOME);
-        } else {
-            return redirect('/opdrachten');
-        }
+        //alles werkt alleen is de $user role altijd leeg dus if statement gaat altijd naar home page if statement moet zijn
+        // if ($user_role == "opdrachtgever")
 
 
-        //return redirect()->intended(RouteServiceProvider::HOME);
+
+        //      if ($request->user->hasRole('opdrachtgever')) {
+        //          return redirect(RouteServiceProvider::HOME);
+        //      } else {
+        //         return redirect('/opdrachten');
+        //       }
+
+
+
+        return redirect()->intended(RouteServiceProvider::HOME);
     }
 
     /**
