@@ -21,14 +21,14 @@
             <div class="form-group row">
                 <label style="font-weight: bold" for="name" class="col-sm-2 col-form-label">Opdracht naam:</label>
                 <div class="col-sm-10">
-                    <input type="text" name="name" class="form-control" id="name" maxlength="255" placeholder="vul hier de opdracht naam in" value="">
+                    <input type="text" name="name" class="form-control" id="name" maxlength="255" placeholder="vul hier de opdracht naam in" value="{{ old('name') }}">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label style="font-weight: bold" for="description" class="col-sm-2 col-form-label">Beschrijving:</label>
                 <div class="col-sm-10">
-                    <textarea name="description" class="form-control" id="description" maxlength="255" placeholder="vul hier de beschrijving in" cols="30" rows="10"></textarea>
+                    <textarea name="description" class="form-control" id="description" maxlength="255" placeholder="vul hier de beschrijving in" cols="30" rows="10">{{ old('description') }}</textarea>
                     <div id="count" class="char-amount">255</div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                 <div class="col-sm-10">
                     <select class="form-select" name="job_id" id="job_id">
                         <option selected value="0">Kies...</option>
-                        <option value="1">Raambelettering</option>
+                        <option value="1" @if(old('dropdown') == '1')selected @endif>Raambelettering</option>
                         <option value="2">Autobelettering</option>
                         <option value="3">Spandoek</option>
                         <option value="4">Kledingbedrukking / Caps</option>
@@ -55,21 +55,21 @@
             <div class="form-group row">
                 <label style="font-weight: bold" for="number" class="col-sm-2 col-form-label">Aantallen:</label>
                 <div class="col-sm-10">
-                    <input type="number" name="number" class="form-control" id="number" placeholder="vul hier het aantal in" value="">
+                    <input type="number" name="number" class="form-control" id="number" placeholder="vul hier het aantal in" value="{{ old('number') }}">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label style="font-weight: bold" for="end_date" class="col-sm-2 col-form-label">Deadline:</label>
                 <div class="col-sm-10">
-                    <input type="date" name="end_date" class="form-control" id="end_date" maxlength="255" placeholder="" value="">
+                    <input type="date" name="end_date" class="form-control" id="end_date" maxlength="255" placeholder="" value="{{ old('end_date') }}">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label style="font-weight: bold" for="file" class="col-sm-2 col-form-label">Upload bestand:</label>
                 <div class="col-sm-10">
-                    <input type="file" name="file" class="form-control" id="file" value="">
+                    <input type="file" name="file" class="form-control" id="file" value="{{ old('file') }}">
                 </div>
             </div>
 

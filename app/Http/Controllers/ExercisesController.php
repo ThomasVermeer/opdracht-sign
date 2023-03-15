@@ -129,6 +129,11 @@ class ExercisesController extends Controller
         return redirect()->route('exercises.index');
     }
 
+    public function submitForm(Request $request)
+    {
+    }
+
+
     /**
      * Remove the specified resource from storage.
      *
@@ -141,4 +146,3 @@ class ExercisesController extends Controller
         return redirect()->route('exercises.index');
     }
 }
-

@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
+use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Role;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -26,25 +28,22 @@ class AuthenticatedSessionController extends Controller
      * @param  \App\Http\Requests\Auth\LoginRequest  $request
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(LoginRequest $request)
+    public function store(LoginRequest $request, User $user, Role $role)
     {
+        $users = User::all();
         $request->authenticate();
 
         $request->session()->regenerate();
 
-        //beziggggg
-
-        //alles werkt alleen is de $user role altijd leeg dus if statement gaat altijd naar home page if statement moet zijn
-        // if ($user_role == "opdrachtgever")
 
 
+        if (\Auth::user()->hasRole('opdrachtgever')) {
 
-        //      if ($request->user->hasRole('opdrachtgever')) {
-        //          return redirect(RouteServiceProvider::HOME);
-        //      } else {
-        //         return redirect('/opdrachten');
-        //       }
+            return redirect(RouteServiceProvider::HOME);
+        } else {
 
+            return redirect('/opdrachten');
+        }
 
 
         return redirect()->intended(RouteServiceProvider::HOME);
