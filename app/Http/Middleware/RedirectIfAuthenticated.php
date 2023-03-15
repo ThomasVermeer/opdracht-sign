@@ -26,14 +26,7 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
-                //User $user, in de parameter om $user werkend te krijgen 
-                //   if ($users->hasRole($request->role == 'opdrachtgever')) {
 
-                //       return redirect('/opdrachten');
-                //   } else {
-
-
-                //    }
                 return redirect(RouteServiceProvider::HOME);
             }
         }
