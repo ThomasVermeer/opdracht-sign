@@ -37,9 +37,9 @@
                 <label style="font-weight: bold" for="job_id" class="col-sm-2 col-form-label">Klus:</label>
                 <div class="col-sm-10">
                     <select class="form-select" name="job_id" id="job_id">
-                        <option selected value="0">Kies...</option>
-                        <option value="1" @if(old('dropdown') == '1')selected @endif>Raambelettering</option>
-                        <option value="2">Autobelettering</option>
+                        <option value="0">Kies...</option>
+                        <option value="1" @if(old('job_id') == '1')selected @endif>Raambelettering</option>
+                        <option value="2" >Autobelettering</option>
                         <option value="3">Spandoek</option>
                         <option value="4">Kledingbedrukking / Caps</option>
                         <option value="5">Interieurwrap</option>
@@ -69,7 +69,9 @@
             <div class="form-group row">
                 <label style="font-weight: bold" for="file" class="col-sm-2 col-form-label">Upload bestand:</label>
                 <div class="col-sm-10">
+                    <!-- nog niet werkend -->
                     <input type="file" name="file" class="form-control" id="file" value="{{ old('file') }}">
+                    <!-- nog niet werkend -->
                 </div>
             </div>
 
