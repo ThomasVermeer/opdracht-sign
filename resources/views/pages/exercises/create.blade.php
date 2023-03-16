@@ -39,15 +39,15 @@
                     <select class="form-select" name="job_id" id="job_id">
                         <option value="0">Kies...</option>
                         <option value="1" @if(old('job_id') == '1')selected @endif>Raambelettering</option>
-                        <option value="2" >Autobelettering</option>
-                        <option value="3">Spandoek</option>
-                        <option value="4">Kledingbedrukking / Caps</option>
-                        <option value="5">Interieurwrap</option>
-                        <option value="6">Vloerstickers</option>
-                        <option value="7">Stickers</option>
-                        <option value="8">Lichtbak</option>
-                        <option value="9">Graveren op Hout / Acrylaat / Glazen</option>
-                        <option value="10">Anders</option>
+                        <option value="2" @if(old('job_id') == '2')selected @endif>Autobelettering</option>
+                        <option value="3" @if(old('job_id') == '3')selected @endif>Spandoek</option>
+                        <option value="4" @if(old('job_id') == '4')selected @endif>Kledingbedrukking / Caps</option>
+                        <option value="5" @if(old('job_id') == '5')selected @endif>Interieurwrap</option>
+                        <option value="6" @if(old('job_id') == '6')selected @endif>Vloerstickers</option>
+                        <option value="7" @if(old('job_id') == '7')selected @endif>Stickers</option>
+                        <option value="8" @if(old('job_id') == '8')selected @endif>Lichtbak</option>
+                        <option value="9" @if(old('job_id') == '9')selected @endif>Graveren op Hout / Acrylaat / Glazen</option>
+                        <option value="10"@if(old('job_id') == '10')selected @endif>Anders</option>
                     </select>
                 </div>
             </div>
