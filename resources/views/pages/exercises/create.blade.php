@@ -69,9 +69,9 @@
             <div class="form-group row">
                 <label style="font-weight: bold" for="file" class="col-sm-2 col-form-label">Upload bestand:</label>
                 <div class="col-sm-10">
-                    <!-- nog niet werkend -->
+                    <!-- nog niet werkend door beveiliging van bestanden door browser -->
                     <input type="file" name="file" class="form-control" id="file" value="{{ old('file') }}">
-                    <!-- nog niet werkend -->
+                    <!-- nog niet werkend door beveiliging van bestanden door browser-->
                 </div>
             </div>
 
