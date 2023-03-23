@@ -6,6 +6,7 @@ use App\Models\Exercise;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
+
 class ExercisesController extends Controller
 {
     /**
@@ -48,6 +49,14 @@ class ExercisesController extends Controller
         $file = $request->file('file')->store('public/user-img');
 
 
+        // bestand opslaan kan niet als er niks is gestuurd later naar kijken 
+
+        //   if ($request->hasFile('file')) {
+        //      $bestand = $request->file('file');
+        //    $tempBestand = $bestand->store('tijdelijk');
+        //  }
+        // file opslaan code
+
         $exercise = new Exercise();
         $exercise->name = $request->name;
         $exercise->description = $request->description;
@@ -56,7 +65,7 @@ class ExercisesController extends Controller
         $exercise->end_date = $request->end_date;
         $exercise->file = str_replace('public/user-img/', '', $file);
         $exercise->save();
-
+        // file opslaan code ->withInput(['file' => $tempBestand])
         return redirect()->route('exercises.index');
     }
 

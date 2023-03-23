@@ -26,6 +26,7 @@
 
         @hasanyrole('opdrachtgever|admin')
         <a style="margin-bottom: 20px;" href="{{route('exercises.create')}}" class="btn btn-primary">Nieuwe opdracht aanmaken</a>
+ 
         @endhasanyrole
         <div class="exercise-table">
             <table class="table sortable table-striped">

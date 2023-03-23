@@ -73,6 +73,13 @@
                 </div>
             </div>
 
+            <div class="form-group row">
+                <label style="font-weight: bold" for="file" class="col-sm-2 col-form-label">mail ontvangen:</label>
+                <div class="col-sm-10">
+                    <input type="checkbox" name="example_checkbox" value="yes">
+                </div>
+            </div>
+
             <div class="form-group">
                 <input class="mt-4 btn btn-primary" type="submit" value="Updaten">
             </div>
