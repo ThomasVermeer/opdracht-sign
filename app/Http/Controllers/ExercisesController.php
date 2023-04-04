@@ -17,6 +17,12 @@ class ExercisesController extends Controller
     public function index()
     {
         $exercises = Exercise::all();
+
+
+        //foreach ($exercises as $exercise) {
+        //    $exercisecounted = count($exercise->entries);
+        //    $exercise->exercisecounted = $exercisecounted;
+        // }
         return view('pages/exercises/opdrachten')->with('exercises', $exercises);
     }
 

@@ -26,7 +26,6 @@
 
         @hasanyrole('opdrachtgever|admin')
         <a style="margin-bottom: 20px;" href="{{route('exercises.create')}}" class="btn btn-primary">Nieuwe opdracht aanmaken</a>
- 
         @endhasanyrole
         <div class="exercise-table">
             <table class="table sortable table-striped">
@@ -36,6 +35,9 @@
                     <th scope="col">Klus</th>
                     <th style="min-width: 210px;" scope="col">Aantal inzendingen</th>
                     <th style="min-width: 150px" scope="col">Eind Datum</th>
+                    @hasanyrole('opdrachtgever|admin')
+                    <th style="min-width: 150px" scope="col">Inzendingen</th>
+                    @endhasanyrole
                 </tr>
                 </thead>
                 <tbody>
@@ -45,8 +47,15 @@
                     <tr>
                         <td><span><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</span></a><p>{{ $exercise->description }}</p></td>
                         <td>{{ $exercise->job->name }}</td>
-                        <td>{{ $exercise->entries }}</td>
+                        <td>{{ count($exercise->participations) }}</td>
                         <td>{{ \Carbon\Carbon::createFromTimestamp(strtotime($exercise->end_date))->format('d-m-Y')}}</td>
+                        @hasanyrole('opdrachtgever|admin')
+                        @if ($exercise->entries >= 1)  
+                        <td style="color:green">124</td>
+                        @else
+                        <td style="color:red">geen inzendingen</td>
+                        @endif
+                        @endhasanyrole
                     </tr>
                     @endif
                 @empty
