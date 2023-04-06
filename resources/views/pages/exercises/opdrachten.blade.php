@@ -51,9 +51,9 @@
                         <td>{{ \Carbon\Carbon::createFromTimestamp(strtotime($exercise->end_date))->format('d-m-Y')}}</td>
                         @hasanyrole('opdrachtgever|admin')
                         @if ($exercise->entries >= 1)  
-                        <td style="color:green">124</td>
+                        <td style="color:green"><i class="fa-regular fa-bell"></i></td>
                         @else
-                        <td style="color:red">geen inzendingen</td>
+                        <td style="color:red"><i class="fa fa-regular fa-bell"></i></i></td>
                         @endif
                         @endhasanyrole
                     </tr>
