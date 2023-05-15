@@ -3,34 +3,28 @@
 @section('content')
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            
         </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100 overlay-image" src="{{asset('img/placeholder-home.avif')}}" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Welkom op de Sign page!</h5>
-{{--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda blanditiis corporis doloremque, ea nobis porro repellat reprehenderit. Beatae consectetur nam nisi porro? Accusamus aliquid itaque laborum nobis nulla pariatur?</p>--}}
+        <div style="background-image: url({{ asset( 'img/placeholder-home.avif') }});" class="img-relative">
+            <div class="margin_top_test">
+                <div class="top_links">
+                    <h3>brandsupply</h3>
+                    <h3>start wedstrijd</h3>
+                    <h3>ontwerpwedstrijden</h3>
+                    <h3>uitleg</h3>
+                    <h3>prijzen</h3>
+                    <h3>ra3a</h3>
+                    <h3>Nederland</h3>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://placeimg.com/1080/500/arch" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://placeimg.com/1080/500/nature" alt="Third slide">
+                <h1>ONTVANG HET PERFECTE ONTWERP OP MAAT</h1>
+                <h5>op Europa's nr.1 marktplaats voor ontwerp </h5>
+            <div class="main-info-button-wrapper">
+              
+                <a class="btn show-info-button" href="{{route('opdrachten')}}" role="button">Opdracht kiezen -></a>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+            
+        </div>
 
     <div class="container">
         <div class="flex-wrapper">
@@ -85,7 +79,7 @@
             </div>
             <div class="full-design">
                 <div class="icon-wrapper">
-                    <div class="design-icon">
+                    <div  class="design-icon">
                         <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Autobelettering</p>

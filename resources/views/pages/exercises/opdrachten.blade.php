@@ -56,6 +56,7 @@
                         <td style="color:red"><i class="fa fa-regular fa-bell"></i></i></td>
                         @endif
                         @endhasanyrole
+                        
                     </tr>
                     @endif
                 @empty
