@@ -55,13 +55,7 @@ class ExercisesController extends Controller
         $file = $request->file('file')->store('public/user-img');
 
 
-        // bestand opslaan kan niet als er niks is gestuurd later naar kijken 
 
-        //   if ($request->hasFile('file')) {
-        //      $bestand = $request->file('file');
-        //    $tempBestand = $bestand->store('tijdelijk');
-        //  }
-        // file opslaan code
 
         $exercise = new Exercise();
         $exercise->name = $request->name;

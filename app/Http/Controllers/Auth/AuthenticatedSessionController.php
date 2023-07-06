@@ -36,9 +36,9 @@ class AuthenticatedSessionController extends Controller
         $request->session()->regenerate();
 
 
-        //auth werkt
+
         if (\Auth::user()->hasRole('opdrachtgever')) {
-            //auth werkt
+
             return redirect(RouteServiceProvider::HOME);
         } else {
 
